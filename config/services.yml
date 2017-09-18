@@ -1,0 +1,8 @@
+services:
+    request:
+        class: Zend\Diactoros\ServerRequest
+        factory: 'Zend\Diactoros\ServerRequestFactory::fromGlobals'
+    doctrine.connection:
+        class: Doctrine\DBAL\Connection
+        factory: 'Doctrine\DBAL\DriverManager::getConnection'
+        arguments: ['%doctrine.connection%']

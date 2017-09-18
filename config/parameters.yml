@@ -1,0 +1,7 @@
+parameters:
+    doctrine.connection:
+          dbname: expressive
+          user: root
+          password: ~
+          host: localhost
+          driver: pdo_mysql
